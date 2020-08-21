@@ -1,0 +1,29 @@
+.user-list-container {
+  overflow: hidden;
+  margin-top: 10%;
+  .user-container {
+    overflow: hidden;
+    width: 30%;
+    float: left;
+    margin-right: 15px;
+    .btn-user-list {
+      width: 100%;
+      margin: 0 auto 10px;
+      padding: 10px;
+      // background: transparent;
+      border-radius: 4px;
+      .user-image {
+        width: 30%;
+        float: left;
+        img {
+          width: 100%;
+        }
+      }
+      .user-name {
+        line-height: 76px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}

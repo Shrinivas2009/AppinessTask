@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-users
+        *ngIf="!userInformation"
+        (onUserSelect)="onUserSelect($event)"
+      ></app-users>
+      <app-profile
+        *ngIf="userInformation"
+        [userInformation]="userInformation"
+        (clearSelection)="userInformation = null"
+      ></app-profile>
+    </div>
+  </div>
+</div>
